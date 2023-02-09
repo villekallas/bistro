@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="javascript" href="javascript.js">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+</head>
+<body>
+    
+<div class="top">
+    <header>
+            <nav class="navbar">
+                <a class="rubrik" href="index.html">
+                    <h1>
+                        Hem
+                    </h1>
+                </a>
+            
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="dropbtn">Meny
+                            </button>
+                            <div id="mydropdown" class="dropdown-content">
+                                <a class="nav-link" href="hem.html">Hem</a>
+                                <a class="nav-link" href="meny.html">Matsedel</a>
+                                <a class="nav-link" href="hitta.html">Hitta hit</a>
+                                <a class="nav-link" href="om.html">Om oss</a>
+
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </navbar>
+    </header>
+</div>
+    <section class="main-content-hem">
+        <div class="slideshow">
+            <img class="mySlides" src="slideshowbilder/köttmajs.jpg" alt="">
+            <img class="mySlides" src="slideshowbilder/teghamburgare.jpg" alt="">
+            <img class="mySlides" src="slideshowbilder/tegmat1.jpg" alt="">
+            <img class="mySlides" src="slideshowbilder/tegmat2.jpg" alt="">
+            <p class="slideshow-info">
+             Förstklassig mat hos Bistro Bentley
+            </p>
+
+        </div>
+
+        <div class="innehåll-content">
+            <h2 class="innehåll-rubrik">Bistro bentley</h2>
+            <p>
+                Välkommen till Bistro Bentley! <br><br>
+                Här serverar vi prisbelönt skolmat gjord på förstklassiga råvaror. Maten här lagas av vår alldeles egna kock, Tobias Bentley, och serveras färsk varje dag. 
+Vår mat har dessutom flertalet gånger belönats och uppmärksammats för sin extremt höga kvalitet i både lokala och nationella tidningar. 
+<br><br>Förutom att maten serveras här, så har vi även våra egna kokböcker för de som vill uppleva förstklassig mat även hemma. 
+<br><br> Välkommen in! 
+            </p>
+            <br>
+            <img class="tobias" src="img/Tobbe Bentley.jpg" alt="Tobias Bentley">
+        </div>
+    </section>
+    <footer>
+        <ul class="footer">
+            <a class="footer" href="hem.html">Hem</a>
+            <a href="meny.html" class="footer-link">Meny</a>
+            <a href="hitta.html" class="footer-link">Hitta hit</a>
+            <a href="om.html" class="footer-link">Om oss</a>
+        </ul>
+    </footer>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 5000);    
+        }
+        </script>
+</body>
+</html>

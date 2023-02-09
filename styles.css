@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+}
+li{
+    list-style: none;
+}
+.top{
+    background-color: lightblue;
+    position: fixed;
+    font-family: 'Baskervville', serif;
+    z-index: 1;
+
+
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header{
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+    background-color: black;
+    width: 90%;
+    z-index: 1;
+    border-top-left-radius: 5px;
+}
+.rubrik{
+    font-size: 30px;
+    margin-left: 10px;
+    padding: 3px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: rgb(41, 41, 41);
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 4px;
+}  
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.rubrik:hover{
+    background-color: rgb(38, 27, 27);
+
+}
+.nav-link{
+    transition: 0.3s ease;
+}
+.nav-item{
+
+}
+.nav-link:hover{
+    color: #D4AF37;
+}
+.dropbtn{
+    background-color: rgb(41, 41, 41);
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 22px;
+
+    position: center;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.dropbtn:hover{
+    background-color: rgb(38, 27, 27);
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    max-width: 124px;
+    min-width: 124px;
+    z-index: 1;
+    background-color: rgb(41, 41, 41);
+    margin-right: 35px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.dropdown-content a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dropdown-content a:hover{
+    transition: ease-out;
+    background-color: rgb(38, 27, 27);
+
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+
+}
+.main-content{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding-top: 100px;
+    background-image: url(img/Bakgrund.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+.main-content-hem{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding-top: 100px;
+    background-image: url(img/Bakgrund.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+.main-content-hem{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2;
+   
+}
+.main-content-om{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding-top: 100px;
+    background-image: url(img/Bakgrund.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    justify-content: center;
+}
+footer{
+
+    background-color: black;
+    font-size: 20px;
+    font-family: 'Baskervville', serif;
+    padding: 10px;
+    margin-left: 7.5%;
+    margin-right:7.5%;
+}
+
+.footer-link{
+    gap: 10px;
+}
+.footer-link:hover{
+    text-decoration: underline;
+
+}
+.slideshow{
+    max-width: 100%;
+    padding: 2.5%;
+}
+.slideshow-info{
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+.mySlides{
+    width: 100%;
+}
+.meny-grid{
+    background-color: #800000;
+    color: white;
+}
+.meny-content{
+    margin: 10px;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.menydag{
+    padding-bottom: 3px;
+}
+.adress-grid{
+
+}
+#map{
+    width: 80%;
+    height: 400px;
+    grid-column: 1;
+    grid-row: 2;
+}
+.innehåll-content{
+    grid-column: 2/-1;
+    grid-row: 1;
+    margin: 10%;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    background-color: #800000;
+    text-align: center;
+    color: white;
+    justify-content: center;
+
+}
+.innehållsrubrik{
+    background-color: #800000;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+.adress{
+    font-size: 15px;
+}
+.adress:hover{
+    text-decoration: underline;
+}
+.bistrobild{
+    width: 96%;
+    margin: 2%;
+    margin-bottom: 0;
+ 
+}
+.bistroteam{
+    grid-column: 1;
+    grid-row: 1;
+}
+.bistroinfo{
+    text-align: center;
+
+    margin-left: 2%;
+    margin-right: 2%;
+
+    color: white;
+    font-size: 20px;
+    background-color: #800000;
+}
+.maps{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+     margin-bottom: 5%;
+}
+.tobias{
+    width: 40%;
+}
