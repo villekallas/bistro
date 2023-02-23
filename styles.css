@@ -15,7 +15,6 @@ li{
     font-family: 'Baskervville', serif;
     z-index: 1;
 
-
 }
 .navbar{
     min-height: 70px;
@@ -133,6 +132,7 @@ a{
     background-repeat: repeat;
     background-size: 100%;
 }
+
 .main-content-hem{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
